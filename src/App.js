@@ -16,7 +16,7 @@ class App extends Component {
     return fetch('https://michalakweb.000webhostapp.com/wp-json/wp/v2/posts')
       .then(response => response.json()).then(responseJSON => {
         this.setState(() => ({
-          posts: responseJSON
+          posts: responseJSON.reverse()
         }));
       }).then(() => {
         // Render another component once the posts get fetched
@@ -34,6 +34,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+          <p></p>
           <p>Posts are being fetched...</p>
         </header>
       </div>
