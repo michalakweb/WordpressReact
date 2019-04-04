@@ -1,6 +1,7 @@
 {
   "name": "wordpress-react",
   "version": "0.1.0",
+  "homepage": "https://michalakweb.github.io/WordpressReact",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
